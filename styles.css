@@ -18,6 +18,7 @@ body {
     justify-content: center;
     grid-template-columns: 15% 20%;
     grid-template-rows: 10%;
+    background-color: rgb(20, 20, 20);
 }
 
 .carousel-inner{
