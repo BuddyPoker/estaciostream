@@ -40,6 +40,10 @@ header {
 header img {
     max-height: 400px;
 }
+
+.nav-link{
+    color: black;
+}
  
  
  
