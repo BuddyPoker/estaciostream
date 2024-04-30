@@ -81,6 +81,16 @@ nav ul li a {
 main {
     padding: 20px;
 }
+
+.categoria{
+    color: RGB(11, 214, 65);
+}
+
+.filmeselegendas{
+    display: grid;
+    justify-items: center;
+    
+}
  
 .destaque {
     position: relative;
