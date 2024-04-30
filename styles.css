@@ -82,6 +82,10 @@ main {
     padding: 20px;
 }
 
+.parteverde{
+    color: rgb(239, 184, 16);
+}
+
 .categoria{
     color: RGB(11, 214, 65);
 }
