@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(20,20,20);
+}
+
+.foto_do_cabeçalho{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    grid-template-rows: 220px;
+    justify-content: center;
+}
+
+.texto_comemorativo{
+    display: grid;
+    grid-template-columns: 220px;
+    grid-template-rows: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.trade-winds-regular {
+    color: green;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.caixas_de_entrada{
+    display: grid;
+    grid-template-columns: 220px;
+    grid-template-rows: 50px 50px 50px 50px 60px 50px 50px 50px ;
+    justify-content: center;
+    padding: 4px;
+    gap: 10px;
+}
+
+h4{
+    color: rgb(63, 172, 245);
+}
+
+.texto_explicativo{
+    color: white;
+    display:grid;
+    grid-template-columns: 310px;
+    grid-template-rows: 60px;
+    justify-content: center;
+
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 15px 85px;
+    border-radius: 10px;
+    border: none;
+}
+
+.dois_ultimos{
+    display: grid;
+    grid-template-columns: 220px;
+    grid-template-rows: 50px 50px;
+    gap: 20px;
+}

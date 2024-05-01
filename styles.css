@@ -95,6 +95,13 @@ main {
     justify-items: center;
     
 }
+
+.verificação{
+    text-decoration: none;
+    color: white;
+    display: grid;
+    justify-items: center;
+}
  
 .destaque {
     position: relative;
