@@ -1,60 +1,88 @@
-[09:27] PAULO VINICIUS SOARES DA COSTA
-/* Reset de estilos */
+/*[09:27] PAULO VINICIUS SOARES DA COSTA
+ Reset de estilos */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    
     background-color: rgb(20, 20, 20);
     color: #fff;
+    opacity: 1.0;
 }
-
-.cabecalho{
+/* VARIABLES */
+:root {
+    --section-padding: 100px;
+    --citrino:  hsl(57, 97%, 45%);
+}
+/*.cabecalho{
     display: grid;
     justify-content: center;
     grid-template-columns: 15% 20%;
     grid-template-rows: 10%;
     background-color: rgb(20, 20, 20);
 }
+*/
 
 .carousel-inner{
     margin: 1em 1em;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
- 
+/* HEADER STYLE SHEET */
 header {
+    position: fixed;
+    padding-block: 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.25s ease-in;
+}
+.hero-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
- 
-header img {
-    max-height: 400px;
+.navbar-list {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
 }
+.logo > img{
+    position:relative;
+    max-width: 200px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
 
+}
 .nav-link{
     color: black;
 }
- 
- 
- 
-body {
-    background-image: url('imagens/pngwing.com\ \(1\).png');
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+/* HERO PAGE */ 
+.hero{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: var(--section-padding);
+    background-image: url('../estaciostream/imagens/hero-bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1.0;
+    min-height: 700px;  
+    height: 100vh;
+    max-height: 1000px;
 }
-
+.hero-title {margin-bottom: 30px;}
+.hero-title > strong {color: var(--citrino);}
 .barradepesquisa{
     background-color: RGB(11, 214, 65);
 }
@@ -201,12 +229,6 @@ footer {
     background-color: rgb(51, 51, 51);
     color: #fff;
     padding: 20px 0;
-}
- 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
  
 .footer-content {
