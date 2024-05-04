@@ -209,7 +209,7 @@ header .container {
 
 /* HERO PAGE */ 
 .hero{
-    background: url(./imagens/hero-bg.jpg) no-repeat;
+    background: url(./imagens/hero-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 750px;
@@ -508,6 +508,8 @@ date-time ion-icon {
 
     .hero-content{margin-top: 90px;}
 }
+
+
 @media (min-width: 992px) {
   
     /**
@@ -592,6 +594,69 @@ date-time ion-icon {
   
     .upcoming .movies-list > li {min-width: calc(33.33% - 20px);}
 }
+
+@media (min-width: 1200px) {
+
+    /**
+     * CUSTOM STYLE
+     */
+  
+    :root {
+  
+      /**
+       * TYPOGRAPHY
+       */
+  
+      --fs-1: 60px;
+      --fs-4: 26px;
+  
+    }
+  
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 1920px; }
+  
+    /* MOVIE CARD */
+  
+    .movies-list { grid-template-columns: repeat(4, 1fr); }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .navbar { margin-inline: auto; }
+  
+    .header-actions .btn-primary {
+      display: block;
+      --fs-11: 14px;
+      padding: 10px 35px;
+      letter-spacing: 1px;
+    }
+  
+  
+  
+    /**
+     * HERO
+     */
+  
+    .hero .container { width: 1320px; }
+  
+  
+  
+    /**
+     * UPCOMING
+     */
+  
+    .upcoming .movies-list > li { min-width: calc(25% - 22.5px); }
+}
+
+
 /*.cabecalho{
     display: grid;
     justify-content: center;
