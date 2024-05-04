@@ -1,9 +1,34 @@
-/*[09:27] PAULO VINICIUS SOARES DA COSTA
-/* Reset de estilos */
-*{
+/* Syles rest */
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+li{list-style: none;}
+a{text-decoration: none;}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {display: block;}
+
+input {
+    font: inherit;
+    width: 100%;
+    border: none;
+}
+select,
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+html {
+    font-family: var(--ff-poppins);
+    scroll-behavior: smooth;
 }
 /* VARIABLES */
 :root {
@@ -46,14 +71,47 @@
 /* Spacing */
     --section-padding: 100px;
 }
-html {
-    font-family: var(--ff-poppins);
-    scroll-behavior: smooth;
-  }
-body {background-color: var(--eerieblack);}
+body {background-color: var(--eerie-black);}
 body.active{overflow: hidden;}
 
 .container { padding-inline: 15px;}
+/* Titles and Subtitles */
+h1,
+h2,
+h3 {
+    color: var(--white);
+    line-height: 1.2;
+}
+.h1 {font-size: var(--fs-1);}
+
+h2 {font-size: var(--fs-2);}
+
+h3 {font-size: var(--fs-3);}
+
+.section-subtitle {
+    color: var(--citrine);
+    font-size: var(--fs-11);
+    font-weight: var(--fw-500);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.section-title { text-align: center;}
+/* Badge*/
+.badge{
+    color: var(--white);
+    font-size: var(--fs-12);
+    font-weight: var(--fw-700);
+    border: 2px solid transparent;
+    padding: 2px 10px;
+}
+.badge-fill{
+    background: var(--white);
+    color: var(--raisin-black);
+}
+.badge-outline{border-color: var(--white);}
+
 /* HEADER STYLE SHEET */
 header {
     position: fixed;
@@ -177,9 +235,86 @@ nav ul {
     justify-content: space-between;
 }
 
-/* Tittles & Subtitles */
-.h1 {font-size: var(--fs-01);}
+/* Movies */
+.meta-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px 25px;
+    margin-bottom: 50px;
+}
+.badge-wrapper,
+.genre-wrapper,
+.date-time{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 10px;
+}
+.genre-wrapper > a {
+    color: var(--gainsboro);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+    transition: var(--transition-1);
+}
+.genre-wrapper > a:is(hover, :focus) {color: var(--citrine);}
+.date-time{gap: 15px;}
+.date-time > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--gainsboro);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+}
+date-time ion-icon {
+    --ionicon-stroke-width: 80px;
+    color: var(--citrine);
+}
 
+/* Buttons */
+.btn {
+    color: var(--white);
+    font-size: var(--fs-11);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 30px;
+    border: 2px solid var(--citrine);
+    border-radius: 50px;
+    transition:var (--transition-1);
+}
+
+.btn > ion-icon { font-size: 18px;}
+
+.btn-primary { background: var(--rich-black-fogra-29);}
+
+.btn-primary:is(:hover, :focus){
+    background: var(--citrine);
+    color: var(--xiketic);
+}
+
+/*Movie cards */
+
+.movie-list {
+    display: grid;
+    gap: 50px;
+}
+.movie-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.movie-card .card-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transition: var(--transition-1);
+}
 /*.cabecalho{
     display: grid;
     justify-content: center;
