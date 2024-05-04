@@ -442,15 +442,22 @@ date-time ion-icon {
 }
 
 @media (min-width: 768px) {
-     /* CUSTOM STYLES */
+     /* 
+     * CUSTOM STYLES 
+     */
      :root {
         --fs-2: 36px;
     }
 
-    /*REUSED STYLE */
+    /*
+    * REUSED STYLE 
+    */
 
     .container {max-width: 720px;}
-    /*HEADER*/
+    
+    /**
+    * HEADER
+    */
 
     .header .container{gap: 30px;}
     .header-actions {
@@ -495,9 +502,95 @@ date-time ion-icon {
     
       .lang-wrapper option { color: var(--black);}
 
-    /*HERO*/
+    /*
+    *HERO
+    */
 
     .hero-content{margin-top: 90px;}
+}
+@media (min-width: 992px) {
+  
+    /**
+     * CUSTOM STYLE
+     */
+  
+    .container { max-width: 960px; }
+  
+    /* MOVIE CARD */
+  
+    .movies-list { grid-template-columns: repeat(3, 1fr); }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .header.active { padding-block: 5px; }
+  
+    .menu-open-btn,
+    .navbar-top,
+    .navbar-social-list { display: none; }
+  
+    .navbar {
+      all: unset;
+      margin-left: auto;
+    }
+  
+    .header-actions {
+      order: 1;
+      margin-left: 0;
+    }
+  
+    .navbar-list {
+      all: unset;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .navbar-link {
+      border-bottom: none;
+      font-size: var(--fs-9);
+      font-weight: var(--fw-700);
+      text-transform: uppercase;
+      padding: 30px 15px;
+    }
+  
+    .overlay { display: none; }
+  
+  
+  
+    /**
+     * HERO
+     */
+  
+    .hero { background-position: right; }
+  
+    .hero .container { width: 950px; }
+  
+    .hero-content {
+      margin-top: 100px;
+      max-width: 600px;
+    }
+  
+  
+  
+    /**
+     * UPCOMING
+     */
+  
+    .upcoming .flex-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .upcoming :is(.section-subtitle, .section-title) { -align: left;}
+  
+    .upcoming .section-title {margin-bottom: 0;}
+  
+    .upcoming .movies-list > li {min-width: calc(33.33% - 20px);}
 }
 /*.cabecalho{
     display: grid;
