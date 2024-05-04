@@ -14,16 +14,17 @@
     <header class="header" data-header>
         <!-- Nav bar e logo -->
         <div class="container">
-            <div class="overlay" data-overlay></div>
-                    <a href="./index.html" class="logo">
-                      <img src="./logos/logo.png" 
-                      alt="Estacio Films">
-                    </a>
 
-                    <div class="header-actions">
-                        <button class="search-btn">
-                            <ion-icon name="search-outline"></ion-icon>
-                          </button>
+            <div class="overlay" data-overlay></div>
+                   
+            <a href="./index.html" class="logo">
+              <img src="./logos/logo.png" alt="Estacio Films">
+            </a>
+
+            <div class="header-actions">
+                <button class="search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
 
             <div class="lang-wrapper">
                 <label for="language">
@@ -36,25 +37,30 @@
                 <option value="ar">AR</option>
                 <option value="tu">TU</option>
             </select>
-            </div>                      
-                 <button class="btn btn-primary">Entrar</button>
-               </div>
-                    <button class="menu-open-btn" data-menu-open-btn>
-                        <ion-icon name="reorder-two"></ion-icon>
+            </div>
+            
+            <button class="btn btn-primary">Entrar</button>
+                
+            </div>
+
+             <button class="menu-open-btn" data-menu-open-btn>
+                 <ion-icon name="reorder-two"></ion-icon>
+            </button>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+
+                    <a href="./index.html" class="logo">
+                         <img src="./logos/logo.png" alt="Estacio Films">
+                    </a>
+
+                    <button class="menu-close-btn" data-menu-close-btnn>
+                        <ion-icon name="close-outline"></ion-icon>
                     </button>
 
-                    <nav class="navbar" data-navbar>
-
-                        <div class="navbar-top">
-                            <a href="./index.html" class="logo">
-                                <img src="./logos/logo.png" alt="Estacio Films">
-                            </a>
-                            <button class="menu-close-btn" data-menu-close-btnn>
-                                <ion-icon name="close-outline"></ion-icon>
-                            </button>
-                        </div>
-                    </nav>
-                <ul class="navbar-list">
+                </div>
+                 <ul class="navbar-list">
                     <li>
                       <a href="./index.html" class="navbar-link">Home</a>
                     </li>
@@ -75,35 +81,199 @@
                       <a href="#" class="navbar-link">Preços</a>
                     </li>
                 </ul>
-            </div> 
-    </header>
-<main>
-    <!-- Home page -->
-</article>
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <p>Estacio Movies</p>
-                <h1 class="h1 hero-title">
-                    Filmes <strong>ilimitados</strong>, documentarios, séries e muito mais.
-                </h1>
-                <div class="meta-wrapper">
-                    <div class="badge-wrapper">
-                        <div class="badge badge-fill">+18</div>
+            </nav>
 
-                        <div class="badge badge-outline">4K</div>
+         </div> 
+    </header>
+
+<main>
+<article>
+    <!-- Home page -->
+
+        <section class="hero">
+            <div class="container">
+    
+              <div class="hero-content">
+    
+                <p class="hero-subtitle">Estacio Filmes</p>
+    
+                <h1 class="h1 hero-title">
+                  Filmes <strong>ilimitados</strong>, Series, Documentarios e mais.
+                </h1>
+    
+                <div class="meta-wrapper">
+                
+                <div class="badge-wrapper">
+                  <div class="badge badge-fill">+18</div>
+    
+                    <div class="badge badge-outline">4K</div>
+                  </div>
+    
+                  <div class="ganre-wrapper">
+                    <a href="#">Romance,</a>
+    
+                    <a href="#">Drama</a>
+                  </div>
+    
+                  <div class="date-time">
+    
+                    <div>
+                      <ion-icon name="calendar-outline"></ion-icon>
+    
+                      <time datetime="2022">2024</time>
                     </div>
-                        <div class="genre-wrapper">
-                            <a href="#">Romance,</a>
-                            <a href="#"> Drama</a>
-                        </div>
-                        
-                        <button class="btn btn-primary">
-                            <ion-icon name="play"></ion-icon>
-                            <span>Assista agora</span>
-                        </button>
+    
+                    <div>
+                      <ion-icon name="time-outline"></ion-icon>
+    
+                      <time datetime="PT128M">128 min</time>
                     </div>
+    
+                  </div>
+    
                 </div>
+    
+        </section>
+
+        <!--
+            Lançamentos
+        -->
+
+        <section class="upcoming">
+            <div class="contaier">
+                <div class="flex-wrapper">
+                    <div class="title-wrapper">
+                        <p class="section-subtitle">Online Streaming</p>
+
+                        <h2 class="h2 section-title">Próximas Estreias</h2>
+                    </div>
+                    <ul class="filter-first">
+                        <li>
+                            <button class="filter-btn">Filmes</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn">Series</button>
+                        </li>
+                        <li>
+                            <button class="filter-btn">Anime</button>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <ul class="movie-list has-scrollbar">
+
+                    <li>
+                        <div class="movie-card">
+                            <a href="#">
+                                <figure class="card-banner">
+                                    <img src="./filmes/carros.jpg" alt="Cars">
+                                </figure>
+                            </a>
+
+                            <div class="title-wrapper">
+                                <a href="#">
+                                    <h3 class="card-title">Carros</h3>
+                                </a>
+                                <time datetime="2023">2023</time>
+                            </div>
+                            <div class="card-met">
+                                <div class="badge badge-outline">4K</div>
+                                <div class="duration">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <time datetime="PT128M">128 min</time>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <data>8.5</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="movie-card">
+                            <a href="#">
+                                <figure class="card-banner">
+                                    <img src="./filmes/encanto.jpg" alt="Encanto">
+                                </figure>
+                            </a>
+
+                            <div class="title-wrapper">
+                                <a href="#">
+                                    <h3 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                </a>
+                                <time datetime="2024">2024</time>
+                            </div>
+                            <div class="card-meta">
+                                <div class="badge badge-outline">4K</div>
+                                <div class="duration">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <time datetime="PT128M">128 min</time>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <data>8.5</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie-card">
+                            <a href="#">
+                                <figure class="card-banner">
+                                    <img src="./filmes/encanto.jpg" alt="Encanto">
+                                </figure>
+                            </a>
+
+                            <div class="title-wrapper">
+                                <a href="#">
+                                    <h3 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                </a>
+                                <time datetime="2024">2024</time>
+                            </div>
+                            <div class="card-meta">
+                                <div class="badge badge-outline">4K</div>
+                                <div class="duration">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <time datetime="PT128M">128 min</time>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <data>8.5</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="movie-card">
+                            <a href="#">
+                                <figure class="card-banner">
+                                    <img src="./filmes/encanto.jpg" alt="Encanto">
+                                </figure>
+                            </a>
+
+                            <div class="title-wrapper">
+                                <a href="#">
+                                    <h3 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                </a>
+                                <time datetime="2024">2024</time>
+                            </div>
+                            <div class="card-meta">
+                                <div class="badge badge-outline">4K</div>
+                                <div class="duration">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <time datetime="PT128M">128 min</time>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <data>8.5</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </article>
