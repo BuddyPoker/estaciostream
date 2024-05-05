@@ -7,30 +7,34 @@ const navCloseBtn = document.querySelector('[data-menu-close-btn]');
 const navBar = document.querySelector('[data-navbar]');
 const overlay = document.querySelector('[data-overlay]');
 
+const toggleNavbar = () => {
+  navBar.classList.toggle('active');
+  overlay.classList.toggle('active');
+  document.body.classList.toggle('active');
+};
+
 const navElementArray = [navOpenBtn, navCloseBtn, overlay];
 
-for(let i = 0; i < navElementArray.length; i++) {
-  navElementArray[i].addEventListener('click', function() {
-    navBar.classList.toggle('open');
-    overlay.classList.toggle('open');
-    document.body.classList.toggle('active')
-  })
-}
+navElementArray.forEach(elem => {
+  elem.addEventListener('click', toggleNavbar);
+});
 
 /** 
  * Header 
 */
 
-const header = document.querySelector('[data-header]');
-  window.addEventListener('scroll', function() {
-    window.scrollY >= 10 ? header.classList.add('scroll') : header.classList.remove('scroll');
-  })
+const header = document.querySelector("[data-header]");
+const toggleHeaderActive = () => {
+  window.scrollY >= 10 ? header.classList.add('active') : header.classList.remove('active');
+};
+window.addEventListener('scroll', toggleHeaderActive);
 
 /*
 * Go top 
  */
 
 const goTopBtn = document.querySelector('[data-go-top]');
-  window.addEventListener('scroll', function() {
-    window.scrollY >= 100 ? goTopBtn.classList.add('active') : goTopBtn.classList.remove('active');
-  })
+const toggleGoTopBtn = () => {
+  window.scrollY >= 100 ? goTopBtn.classList.add('active') : goTopBtn.classList.remove('active');
+};
+window.addEventListener('scroll', toggleGoTopBtn);
