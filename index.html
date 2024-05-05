@@ -10,7 +10,8 @@
     <link rel="shortcut icon" href="./assets/images/logos/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/js/main.js" type="module" defer></script>
-    <script src="./assets/js/script.js" type="module" defer></script>
+    <script src="./assets/js/fetchMovies.js" type="module" defer></script>
+    <script src="./assets/js/index.js" defer></script>
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +33,7 @@
             </a>
 
             <div class="header-actions">
-                <button class="search-btn">
+                <button class="search-btn" data-searchBtn>
                     <input type="text">
                     <ion-icon name="search-outline"></ion-icon>
                 </button>
@@ -66,7 +67,7 @@
                          <img src="./assets/images/logos/estacioflix.png" alt="Estacio Films">
                     </a>
 
-                    <button class="menu-close-btn" data-menu-close-btnn>
+                    <button class="menu-close-btn" data-menu-close-btn>
                         <ion-icon name="close-outline"></ion-icon>
                     </button>
 
@@ -150,11 +151,11 @@
             <div class="container">
                 <div class="flex-wrapper">
                     <div class="title-wrapper">
-                        <p class="hero-subtitle">Online Streaming</p>
+                        <p class="hero-subtitle">Destaques</p>
 
-                        <h2 class="h2 section-title">Próximas Estreias</h2>
+                        <h2 class="h2 section-title">Originais, excluisivos e mais</h2>
                     </div>
-                    <ul class="filter-first">
+                    <ul class="filter-list">
                         <li>
                             <button class="filter-btn">Filmes</button>
                         </li>
@@ -175,7 +176,9 @@
         </section>
     </article>
 </main>
-
+<a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
 <!-- Carrosel -->
     <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
