@@ -96,3 +96,4 @@ function InsertMovies(upcoming) {
 }
 
 export { InsertMovies };
+
