@@ -1,4 +1,4 @@
-import { InsertMovies } from "./main.js";
+import { InsertMovies } from "./fetchMovies.js";
 
 export const apiKey = '05971feefd7f2a91f44479cbbbb4e21a';
 let movies = []; 
