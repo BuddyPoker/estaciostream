@@ -256,7 +256,7 @@ header.active {
     border-radius: 50px;
 }
 .upcoming .filter-btn:focus{border-color: var(--citrine);}
-.upcoming .movie-listt > li {
+.upcoming .movie-list> li {
     min-width: 100%;
     scroll-snap-align: start;
 }
