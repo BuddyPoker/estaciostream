@@ -18,6 +18,7 @@ input {
     font: inherit;
     width: 100%;
     border: none;
+    border-radius: 5px;
 }
 select,
 button {
@@ -82,7 +83,7 @@ body.active{overflow: hidden;}
     color: var(--white);
     line-height: 1.2;
 }
-h1 {font-size: var(--fs-1);}
+.h1 {font-size: var(--fs-1);}
 
 h2 {font-size: var(--fs-2);}
 
@@ -205,11 +206,9 @@ header .container {
     pointer-events: all;
 }
 
-
-
 /* HERO PAGE */ 
 .hero{
-    background: url(./imagens/hero-bg.png) no-repeat;
+    background: url(../images/imagens/hero-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 750px;
@@ -221,7 +220,6 @@ header .container {
     padding-block: var(--section-padding);
 }
 .hero-content {
-    text-transform: uppercase;
     max-width: 600px;
     margin-top: 60px;
 }
@@ -234,12 +232,12 @@ header .container {
 }
 
 .hero-title {margin-bottom: 30px;}
-.hero-title > strong {color: var(--citrino);}
+.hero-title > strong {color: var(--citrine);}
 
 /* Upcoming */
 
 .upcoming {
-    background: url("./imagens/upcoming-bg.jpg") no-repeat;
+    background: url(../images/imagens/upcoming-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     padding-block: var(--section-padding);
@@ -466,6 +464,7 @@ date-time ion-icon {
         align-items: center;
         gap: 35px;
     }
+
     .header-actions .btn-primary{display: none;}
 
     .search-btn {
@@ -473,7 +472,14 @@ date-time ion-icon {
         color: var(--white);
     }
 
-    search-btn ion-icon {--ionicon-stroke-width: 80px;}
+    .search-btn ion-icon {
+        font-size: 20px;
+        color:var(--citrine);
+        flex-direction: flex-end;
+        position: absolute;
+        bottom: 2px;
+        right: 5px;
+        --ionicon-stroke-width: 80px;}
     .search-btn::after {
         content: "";
         position: absolute;

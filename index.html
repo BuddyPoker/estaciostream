@@ -7,9 +7,16 @@
     <!--------------------->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="./assets/js/index.js" defer></script>
-    <title>Minha Plataforma de Streaming</title>
+    <link rel="shortcut icon" href="./assets/images/logos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/main.js" type="module" defer></script>
+    <script src="./assets/js/script.js" type="module" defer></script>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--------------------->
+    <title>EstacioFlix</title>
     
 </head>
 <body>
@@ -21,11 +28,12 @@
             <div class="overlay" data-overlay></div>
                    
             <a href="./index.html" class="logo">
-              <img src="./logos/estacioflix.png" alt="EstacioFlix">
+              <img src="./assets/images/logos/estacioflix.png" alt="EstacioFlix">
             </a>
 
             <div class="header-actions">
                 <button class="search-btn">
+                    <input type="text">
                     <ion-icon name="search-outline"></ion-icon>
                 </button>
 
@@ -35,8 +43,8 @@
                 </label>
 
             <select name="language" id="language">
-                <option value="en">EN</option>
-                <option value="au">AU</option>
+                <option value="en">PT</option>
+                <option value="au">EN</option>
                 <option value="ar">AR</option>
                 <option value="tu">TU</option>
             </select>
@@ -55,7 +63,7 @@
                 <div class="navbar-top">
 
                     <a href="./index.html" class="logo">
-                         <img src="./logos/logo.png" alt="Estacio Films">
+                         <img src="./assets/images/logos/estacioflix.png" alt="Estacio Films">
                     </a>
 
                     <button class="menu-close-btn" data-menu-close-btnn>
@@ -94,14 +102,11 @@
 
         <section class="hero">
             <div class="container">
-                
-                
+
                 <div class="hero-content">
-                    
-                    <p class="hero-subtitle">Estacio Filmes</p>
-    
+                        
                     <h1 class="h1 hero-title">
-                        Filmes <strong>ilimitados</strong>, Series, Documentarios e mais.
+                        Filmes <strong>ilimitados</strong>, series e muito mais.
                     </h1>
                     
                     <div class="meta-wrapper">
@@ -162,91 +167,9 @@
                     </ul>
 
                 </div>
-
                 <ul class="movies-list has-scrollbar">
-
-                    <li>
-                        <div class="movie-card">
-                            <a href="#">
-                                <figure class="card-banner">
-                                    <img src="./filmes/carros.jpg" alt="Cars">
-                                </figure>
-                            </a>
-
-                            <div class="title-wrapper">
-                                <a href="#">
-                                    <h3 class="card-title">Carros</h3>
-                                </a>
-                                <time datetime="2023">2023</time>
-                            </div>
-                            <div class="card-meta">
-                                <div class="badge badge-outline">4K</div>
-                                <div class="duration">
-                                    <ion-icon name="time-outline"></ion-icon>
-                                    <time datetime="PT128M">128 min</time>
-                                </div>
-                                <div class="rating">
-                                    <ion-icon name="star"></ion-icon>
-                                    <data>8.5</data>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div class="movie-card">
-                            <a href="#">
-                                <figure class="card-banner">
-                                    <img src="./filmes/encanto.jpg" alt="Encanto">
-                                </figure>
-                            </a>
-
-                            <div class="title-wrapper">
-                                <a href="#">
-                                    <h3 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                </a>
-                                <time datetime="2024">2024</time>
-                            </div>
-                            <div class="card-meta">
-                                <div class="badge badge-outline">4K</div>
-                                <div class="duration">
-                                    <ion-icon name="time-outline"></ion-icon>
-                                    <time datetime="PT128M">128 min</time>
-                                </div>
-                                <div class="rating">
-                                    <ion-icon name="star"></ion-icon>
-                                    <data>8.5</data>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="movie-card">
-                            <a href="#">
-                                <figure class="card-banner">
-                                    <img src="./filmes/encanto.jpg" alt="Encanto">
-                                </figure>
-                            </a>
-
-                            <div class="title-wrapper">
-                                <a href="#">
-                                    <h3 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                </a>
-                                <time datetime="2024">2024</time>
-                            </div>
-                            <div class="card-meta">
-                                <div class="badge badge-outline">4K</div>
-                                <div class="duration">
-                                    <ion-icon name="time-outline"></ion-icon>
-                                    <time datetime="PT128M">128 min</time>
-                                </div>
-                                <div class="rating">
-                                    <ion-icon name="star"></ion-icon>
-                                    <data>8.5</data>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    <!--OS FILMES SERÃO INSERIDOS AQUI VIA API-->
+                </li>
                 </ul>
             </div>
         </section>
