@@ -14,7 +14,6 @@ function fetchAndDisplayMovies(endpoint, numMovies) {
       console.error(`Ocorreu um erro ao obter os filmes em ${endpoint}:`, error);
     });
 }
-
 const popularMoviesEndpoint = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-BR`;
 const numPopularMovies = 4; // Altere este valor para o número desejado de filmes populares a serem exibidos
 
