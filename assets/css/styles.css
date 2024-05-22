@@ -297,7 +297,16 @@ date-time ion-icon {
     --ionicon-stroke-width: 80px;
     color: var(--citrine);
 }
-
+/* Series */
+.tv-series {
+    background: url("../images/imagens/tv-series-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block: var(--section-padding);
+  }
+  
+  .tv-series .section-title { margin-bottom: 50px; }
+  
 /* Buttons */
 .btn {
     color: var(--white);
