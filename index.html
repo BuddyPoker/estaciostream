@@ -104,7 +104,25 @@
             </nav>
         </div>
     </header>
-
+    <script>
+        $('#mainSlider').on('slide.bs.carousel', function () {
+          $('.carousel-caption').removeClass('active');
+        });
+      
+        $('#mainSlider').on('slid.bs.carousel', function () {
+          $('.carousel-item.active .carousel-caption').addClass('active');
+        });
+      
+        $(document).ready(function () {
+          $('.carousel-item.active .carousel-caption').addClass('active');
+        });
+      
+        $('#mainSlider').carousel({
+          interval: 5000, // 5 segundos entre slides
+          ride: 'carousel'
+        });
+      </script>
+      
     <main class="container_ma">
         <article>
             <!-- Home page -->
@@ -250,7 +268,24 @@
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+            <script>
+                $('#mainSlider').on('slide.bs.carousel', function () {
+                  $('.carousel-caption').removeClass('active');
+                });
+              
+                $('#mainSlider').on('slid.bs.carousel', function () {
+                  $('.carousel-item.active .carousel-caption').addClass('active');
+                });
+              
+                $(document).ready(function () {
+                  $('.carousel-item.active .carousel-caption').addClass('active');
+                });
+              
+                $('#mainSlider').carousel({
+                  interval: 5000, // 5 segundos entre slides
+                  ride: 'carousel'
+                });
+              </script>
 
 
             </div>   
