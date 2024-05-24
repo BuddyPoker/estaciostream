@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -19,17 +24,18 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/js/script.js" type="module" defer></script>
     <script src="./assets/js/fetchMovies.js" type="module" defer></script>
-    <script src="./assets/js/index.js" type="module"defer></script>
+    <script src="./assets/js/index.js" type="module" defer></script>
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!--------------------->
     <title>EstacioFlix</title>
-    
+
 </head>
+
 <body>
-    
+
     <header class="header" data-header>
         <!-- Nav bar e logo -->
         <div class="container">
@@ -104,29 +110,12 @@
             </nav>
         </div>
     </header>
-    <script>
-        $('#mainSlider').on('slide.bs.carousel', function () {
-          $('.carousel-caption').removeClass('active');
-        });
-      
-        $('#mainSlider').on('slid.bs.carousel', function () {
-          $('.carousel-item.active .carousel-caption').addClass('active');
-        });
-      
-        $(document).ready(function () {
-          $('.carousel-item.active .carousel-caption').addClass('active');
-        });
-      
-        $('#mainSlider').carousel({
-          interval: 5000, // 5 segundos entre slides
-          ride: 'carousel'
-        });
-      </script>
-      
+
+
     <main class="container_ma">
         <article>
             <!-- Home page -->
-            <div class="container-fluid">
+            <div class="container-fluid p-0">
                 <div id="mainSlider" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
@@ -138,33 +127,24 @@
                             <img src="assets/images/imagens/hero-bg.png" class="d-block w-100" alt="Filme-de-guerra">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1 class="h1 hero-title">
-                                    Filmes <strong>ilimitados</strong>, series e muito mais.
+                                    Filmes <strong>ilimitados</strong>, séries e muito mais.
                                 </h1>
                                 <div class="meta-wrapper">
-
                                     <div class="badge-wrapper">
                                         <div class="badge badge-fill">+18</div>
-
                                         <div class="badge badge-outline">4K</div>
                                     </div>
-
                                     <div class="genre-wrapper">
                                         <a href="#">Romance,</a>
-
                                         <a href="#">Drama</a>
                                     </div>
-
                                     <div class="date-time">
-
                                         <div>
                                             <ion-icon name="calendar-outline"></ion-icon>
-
                                             <time datetime="2022">2024</time>
                                         </div>
-
                                         <div>
                                             <ion-icon name="time-outline"></ion-icon>
-
                                             <time datetime="PT128M">128 min</time>
                                         </div>
                                     </div>
@@ -172,7 +152,6 @@
                                 <button class="btn btn-primary">Assistir agora</button>
                             </div>
                         </div>
-
                         <div class="carousel-item">
                             <img src="assets/images/imagens/carrossel.jpg" class="d-block w-100"
                                 alt="Animação-colorida">
@@ -181,30 +160,21 @@
                                     Filmes Para Todas as <strong>Idades</strong>.
                                 </h1>
                                 <div class="meta-wrapper">
-
                                     <div class="badge-wrapper">
                                         <div class="badge badge-fill">L</div>
-
                                         <div class="badge badge-outline">4K</div>
                                     </div>
-
                                     <div class="genre-wrapper">
                                         <a href="#">Animação,</a>
-
                                         <a href="#">Aventura</a>
                                     </div>
-
                                     <div class="date-time">
-
                                         <div>
                                             <ion-icon name="calendar-outline"></ion-icon>
-
                                             <time datetime="2022">2014</time>
                                         </div>
-
                                         <div>
                                             <ion-icon name="time-outline"></ion-icon>
-
                                             <time datetime="PT128M">101 min</time>
                                         </div>
                                     </div>
@@ -212,7 +182,6 @@
                                 <button class="btn btn-primary">Assistir agora</button>
                             </div>
                         </div>
-
                         <div class="carousel-item">
                             <img src="assets/images/imagens/carrossel2.jpg" class="d-block w-100"
                                 alt="Filme-com-uma-paisagem">
@@ -221,30 +190,21 @@
                                     Filmes com mais alta <strong>Resolução</strong>.
                                 </h1>
                                 <div class="meta-wrapper">
-
                                     <div class="badge-wrapper">
                                         <div class="badge badge-fill">+14</div>
-
                                         <div class="badge badge-outline">4K</div>
                                     </div>
-
                                     <div class="genre-wrapper">
                                         <a href="#">Ação,</a>
-
                                         <a href="#">Aventura</a>
                                     </div>
-
                                     <div class="date-time">
-
                                         <div>
                                             <ion-icon name="calendar-outline"></ion-icon>
-
                                             <time datetime="2022">2022</time>
                                         </div>
-
                                         <div>
                                             <ion-icon name="time-outline"></ion-icon>
-
                                             <time datetime="PT128M">146 min</time>
                                         </div>
                                     </div>
@@ -253,120 +213,121 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#mainslider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only"></span>
                     </a>
-                    <a href="#mainslider" class="carousel-control-next" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only"></span>
                     </a>
-
                 </div>
             </div>
+
 
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
             <script>
-                $('#mainSlider').on('slide.bs.carousel', function () {
-                  $('.carousel-caption').removeClass('active');
-                });
-              
-                $('#mainSlider').on('slid.bs.carousel', function () {
-                  $('.carousel-item.active .carousel-caption').addClass('active');
-                });
-              
                 $(document).ready(function () {
-                  $('.carousel-item.active .carousel-caption').addClass('active');
+                    $('#mainSlider').carousel({
+                        interval: 5000, // 5 segundos entre slides
+                        ride: 'carousel'
+                    });
+
+                    $('#mainSlider').on('slide.bs.carousel', function () {
+                        $('.carousel-caption').removeClass('active');
+                    });
+
+                    $('#mainSlider').on('slid.bs.carousel', function () {
+                        $('.carousel-item.active .carousel-caption').addClass('active');
+                    });
+
+                    $('.carousel-item.active .carousel-caption').addClass('active');
                 });
-              
-                $('#mainSlider').carousel({
-                  interval: 5000, // 5 segundos entre slides
-                  ride: 'carousel'
-                });
-              </script>
+            </script>
 
 
-            </div>   
+
+            </div>
             </section>
-                
-                <!--
+
+            <!--
             Lançamentos
         -->
 
-        <section class="upcoming">
-            <div class="container">
-                <div class="flex-wrapper">
-                    <div class="title-wrapper">
-                        <p class="hero-subtitle">Destaques</p>
+            <section class="upcoming">
+                <div class="container">
+                    <div class="flex-wrapper">
+                        <div class="title-wrapper">
+                            <p class="hero-subtitle">Destaques</p>
 
-                        <h2 class="h2 section-title">Originais, exclusivos e mais</h2>
+                            <h2 class="h2 section-title">Originais, exclusivos e mais</h2>
+                        </div>
+                        <ul class="filter-list">
+                            <li>
+                                <button class="filter-btn">Filmes</button>
+                            </li>
+                            <li>
+                                <button class="filter-btn">Series</button>
+                            </li>
+                            <li>
+                                <button class="filter-btn">Anime</button>
+                            </li>
+                        </ul>
+
                     </div>
-                    <ul class="filter-list">
-                        <li>
-                            <button class="filter-btn">Filmes</button>
-                        </li>
-                        <li>
-                            <button class="filter-btn">Series</button>
-                        </li>
-                        <li>
-                            <button class="filter-btn">Anime</button>
-                        </li>
-                    </ul>
-
-                </div>
                     <ul class="movies-list has-scrollbar">
                         <!--OS FILMES SERÃO INSERIDOS AQUI VIA API-->
                     </ul>
-            </div>
+                </div>
 
-        </section>
+            </section>
 
-    <!-- SERIES  -->
-    
-    <section class="tv-series">
-        <div class="container">
-            <div class="flex-wrapper">
-                <p class="section-subtitle">Series</p>
+            <!-- SERIES  -->
 
-                <h2 class="h2 section-title">As melhores séries</h2>
+            <section class="tv-series">
+                <div class="container">
+                    <div class="flex-wrapper">
+                        <p class="section-subtitle">Series</p>
 
-                <ul class="movies-list has-scrollbar">
-                    <!--OS FILMES SERÃO INSERIDOS AQUI VIA API-->
-                </ul>
-            </div> 
-        </section>
+                        <h2 class="h2 section-title">As melhores séries</h2>
 
-        <!-- REGISTER -->
-        <section class="cta">
-            <div class="container">
-    
-              <div class="title-wrapper">
-                <h2 class="cta-title">Experimente o teste por 30 dias.</h2>
-    
-                <p class="cta-text">
-                  Digite seu e-mail para criar uma conta ou efetue o login.
-                </p>
-              </div>
-    
-              <form action="" class="cta-form">
-                <input type="email" name="email" required placeholder="Digite seu e-mail" class="email-field">
-    
-                <button type="submit" class="cta-form-btn">Cadastre-se</button>
-              </form>
-    
-            </div>
-          </section>
-    
+                        <ul class="movies-list has-scrollbar">
+                            <!--OS FILMES SERÃO INSERIDOS AQUI VIA API-->
+                        </ul>
+                    </div>
+            </section>
 
-    </article>
-</main>
+            <!-- REGISTER -->
+            <section class="cta">
+                <div class="container">
 
-<a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up"></ion-icon>
-  </a>
-<!-- Carrosel -->
+                    <div class="title-wrapper">
+                        <h2 class="cta-title">Experimente o teste por 30 dias.</h2>
+
+                        <p class="cta-text">
+                            Digite seu e-mail para criar uma conta ou efetue o login.
+                        </p>
+                    </div>
+
+                    <form action="" class="cta-form">
+                        <input type="email" name="email" required placeholder="Digite seu e-mail" class="email-field">
+
+                        <button type="submit" class="cta-form-btn">Cadastre-se</button>
+                    </form>
+
+                </div>
+            </section>
+
+
+        </article>
+    </main>
+
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up"></ion-icon>
+    </a>
+    <!-- Carrosel -->
     <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -747,4 +708,5 @@
     -->
 
 </body>
+
 </html>
