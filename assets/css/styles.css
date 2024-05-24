@@ -228,6 +228,40 @@ header.active {
 .hero-title {margin-bottom: 30px;}
 .hero-title > strong {color: var(--citrine);}
 
+/* CSS personalizado para preencher a tela inteira */
+ 
+.container-fluid {
+    padding: 0;
+}
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    top: 50%; /* Posiciona a legenda no meio verticalmente */
+    transform: translateY(-50%); /* Centraliza a legenda verticalmente */
+    height: auto; /* Permite que a altura se ajuste automaticamente */
+    width: 30vw; /* Garante que a legenda ocupe 30% da largura da viewport */
+    
+    padding: 40px; /* Espaçamento interno da legenda */
+    color: #ffffff; /* Cor do texto da legenda */
+  }
+  
+  .carousel-caption h1 {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior do título */
+  }
+  
+  .carousel-caption .meta-wrapper {
+    margin-top: 10px; /* Espaçamento superior entre o título e a meta-informação */
+  }
+  
+  .carousel-caption .btn {
+    margin-top: 20px; /* Espaçamento superior para o botão */
+  }
+  
 /* Upcoming */
 
 .upcoming {
