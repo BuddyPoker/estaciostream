@@ -6,10 +6,11 @@ document.querySelector('.btn').addEventListener('click', function () {
     const senhaValida = 'thier.js';
 
     if (email === emailValido && senha === senhaValida) {
-        localStorage.setItem('usuarioNome',email.substring(0,email.indexOf('@')))
-        localStorage.setItem('logado',true)
-        window.location.href = 'https://buddypoker.github.io/estaciostream/';
-    }
+        // Armazena o nome do usuário no localStorage
+        localStorage.setItem('usuarioNome', email.substring(0, email.indexOf('@')));
+        // Redireciona para a página principal
+        window.location.href = 'sua_pagina_principal.html';
+    }    
     else {
         document.querySelector('.mensagem-erro').style.display = 'block';
     }

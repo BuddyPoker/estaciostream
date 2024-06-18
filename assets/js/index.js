@@ -2,11 +2,15 @@
  * Navbar variables
 */ 
 
-document.addEventListener('DOMContentLoaded',function(){
-  if (localStorage.getItem('logado')) {
-      document.querySelector('.btn').textContent = 'olá' + localStorage.getItem(usuarioNome)
+document.addEventListener('DOMContentLoaded', function () {
+  // Verifica se o nome do usuário está armazenado no localStorage
+  var usuarioNome = localStorage.getItem('usuarioNome');
+  if (usuarioNome) {
+      // Atualiza o texto do botão com o nome do usuário
+      document.querySelector('.btn').textContent = usuarioNome;
   }
-})
+});
+
 
 const navOpenBtn = document.querySelector('[data-menu-open-btn]');
 const navCloseBtn = document.querySelector('[data-menu-close-btn]');
