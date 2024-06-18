@@ -2,6 +2,12 @@
  * Navbar variables
 */ 
 
+document.addEventListener('DOMContentLoaded',function(){
+  if (localStorage.getItem('logado')) {
+      document.querySelector('.btn').textContent = 'olá' + localStorage.getItem(usuarioNome)
+  }
+})
+
 const navOpenBtn = document.querySelector('[data-menu-open-btn]');
 const navCloseBtn = document.querySelector('[data-menu-close-btn]');
 const navBar = document.querySelector('[data-navbar]');

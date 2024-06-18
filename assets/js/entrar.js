@@ -6,6 +6,8 @@ document.querySelector('.btn').addEventListener('click', function () {
     const senhaValida = 'thier.js';
 
     if (email === emailValido && senha === senhaValida) {
+        localStorage.setItem('usuarioNome',email.substring(0,email.indexOf('@')))
+        localStorage.setItem('logado',true)
         window.location.href = 'https://buddypoker.github.io/estaciostream/';
     }
     else {
