@@ -9,7 +9,7 @@ document.querySelector('.btn').addEventListener('click', function () {
         // Armazena o nome do usuário no localStorage
         localStorage.setItem('usuarioNome', email.substring(0, email.indexOf('@')));
         // Redireciona para a página principal
-        window.location.href = 'sua_pagina_principal.html';
+        window.location.href = 'index.html';
     }    
     else {
         document.querySelector('.mensagem-erro').style.display = 'block';
